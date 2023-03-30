@@ -1,8 +1,7 @@
 /* 
   Lesson 2!
-  Welcome to the CSS file!
-
-  Let's talk about color for a second.
+  Let's talk about color.
+  
   So far we have used the name of a color inside our p selector to style our p element.
 
   p {
@@ -15,16 +14,172 @@
   OK. Named Colors... Great. But there's only 148! That isn't very many!
   There are other ways to define colors in CSS. I'll share a few ways here.
 
-  The second and probably still most popular way to add color values in CSS is by using HEX values.
-  Our color blueviolet can be described with hex values as well. #8A2BE2 is the exact same color as blueviolet.
+
+  RGBA Color
+  A second way to create a color value in CSS is to use red green blue (rgb) values.
+  These values go from 0 to 255. There some computer science-y reasons for this 0 to 255 range we won't get into righht now.
+
+  Our blueviolet color in RGB is rgb(138, 43, 226)
+
+  p {
+      color: rgb(138, 43, 226);
+  }
+
+  I often think of this in percentages of our base red, green blue. 
+  
+  Our color is blueviolet so there's going to be a lot of blue color, some red color and not very much green.
+  Our number 138, 43, 226 matches this.
+
+
+  138 out of 255 is 138/255 = .54 or 54% red.
+                     43/255 = .17 or 17% green.
+                    226/255 = .89 or 89% blue. 
+  
+  Yep! That is definitely a purpley-blue color!
+
+  Notice on line 18 I said RGBA color. So what about that A?
+  A is for our alpha channel! We get transparancy with RGBA color!
+  Note: This last digit is a bit different. It doesn't go all the way from 0 to 255. It only goes between 0 and 1!
+  0 is totally transparent. 1 is totally opaque. So half opacity is .5!
+
+  So our blueviolet color with full opacity is
+
+  p {
+      color: rgba(138, 43, 226, 1);
+  }
+
+  Note that when opacity is full, we should just drop the a entirely.
+  
+  p {
+    color: rgb(138, 43, 226);
+  }
+
+  But if we want to show our blueviolet color with half opacity we would use the a.
+
+  p {
+      color: rgba(138, 43, 226, .5);
+  }
+
+
+  OK! Named Color and RGBA are done! That was two different types of ways to express color. We have two left to go!
+
+
+  HEX Color
+  The third and still most popular way to add color values in CSS is by using HEX values.
+  Our color blueviolet can be described as a hexidecimal value using #8A2BE2.
 
   p {
       color: #8A2BE2;
   }
 
-  
+  I find hex color to be the hardest to understand but I think we can get there together.
+  Hex color codes always start with a pound sign or hashtag (#) and are followed by six letters and/or numbers.
 
-    color: rgb(138, 43, 226);
+  
+  The first two of the six characters are for red.
+  The next two of the six characters are for green
+  The last two of the six characters refer to blue. 
+  
+  The color values for each of the red, green and blue amounts are defined in values between 00 and FF.
+  This is weird. I know.
+
+  Numbers are used for values 1 through 9. Then letters are use to represent values 10 through 15.
+  I list them out. I think this helps.
+
+  0 = 0
+  1 = 1
+  2 = 2
+  3 = 3
+  4 = 4
+  5 = 5
+  6 = 6
+  7 = 7
+  8 = 8
+  9 = 9
+  A = 10
+  B = 11
+  C = 12
+  D = 13
+  E = 14
+  F = 15
+
+  A reminder that we call this system hexadecimal. Hexa for 6 and decimal for 10. This is a base 16 numbering system!
+
+  I think an example helps
+  I'll use the color red here to explain.
+  Pure red is the hex value #FF0000
+  Let's break #FF0000 into our 6 characters total: F, F, 0, 0, 0, and 0.
+
+  The first and second two characters are for our red value. FF
+  The third and fourth characters are for our green value. 00
+  The fifth and sixth characters are for our blue value. 00
+
+  The formula for turning one of our hex pairs into a number is as follows
+
+  Step 1. Multiply the first character by 16.
+  If we do that, the first character is F, which is 15. So we do 15 x 16 = 240.
+
+  Step 2. Multiply the second character by 1.
+  If we do that, the second character is also F, which is 15. So we do 15 x 1 = 15.
+
+  Step 3. Add the first number to the second number.
+  Adding the two totals together: 240 + 15 = 255
+
+  Ah ha! Look at our friend rgb color! 255 means the maximum of a color!
+  In rgb, red is rgb(255, 0, 0) in hex it is #FF0000
+  If we perform the hexadecimal calcuation we learn that FF is hex for 255!
+  It's the same system just expressed differently!
+
+  You might be asking, do I really need to do all that math? The answer is no. There's plenty of converters online.
+  But it is useful as a gut check to understand how the system works.
+
+  For example, 
+  #FF0000 should be easily understood as pure red or rgb(255, 0, 0).
+  #00FF00 should be easily understood as pure green or rgb(0, 255, 0).
+  #0000FF should be easily understood as pure blue or rgb(0, 0, 255).
+
+
+  Is there an Alpha? No. There isn't. This is a downside of the Hex Color and Named Color systems.
+
+
+  
+  And for our final act, let's talk about HSLA Color!
+
+  HSLA stands for Hue, Saturation, and Lightness and we get our friend Alpha for transparency.
+
+  Our blueviolet in hsl is hsl(271, 76%, 53%)
+
+  Notice that first number is a number the second and third numbers are percentages.
+
+  Let's take Hue first. 
+  Hue is a degree on the color wheel from 0 to 360. 
+  0 (and 360) is red.
+  120 is green.
+  240 is blue.
+
+  Saturation is the intensity of the color described as a percentage from 0% to 100%.
+  100% is full color, no gray. 
+   50% is 50% gray, and you still get the color. 
+    0% is totally gray. No color.
+
+  Lightness is our third number. Lightness is how much light you give the color. 
+
+    0% means no light (totally dark)
+   50% means 50% light.
+  100% means full light.
+
+  Alpha starts at 0.0 (fully transparent) and goes up to 1.0 (not transparent at all).
+  Alpha in HSLA is described with two digits. This is a bit different than in our RGBA system.
+
+In CSS we add the alpha value on much like we do in RGBA. We only use show it when we need it.
+
+p {
+  color:  hsla(271, 76%, 53%, 0.8);
+}
+
+
+
+
 
 
 
