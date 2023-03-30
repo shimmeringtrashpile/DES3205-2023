@@ -10,6 +10,7 @@
                                 or 'align,' for text alignments like left right and center.
                                 or 'font-size' for things like 16px.
   You computer understands that you've given it a property value pair when it sees a :, also known as a colon.
+
   Here's the structure of a selector that contains three property value pairs. 
   It's the template your computer is looking for to take your design rule and apply it to your html.
 
@@ -20,42 +21,53 @@ selector {
 } 
 
 This is just the template though. Let's make an actual useful selector!
-As we know, text is the most basic component of design.
-Most html files have body copy. 
+
+As we know, typography is the most basic component of design. So let's start there.
+
+Most html files have body copy. This means your going to see our friend the <p> tag A LOT.
 Web browser's know, "When I see a tag with the p element inside, <p></p>, that's body copy!"
 The letter p stands for paragraph.
-CSS understands these basic html elements such as p, body, head, a, etc and we can use these to style our page.
-The letter 'p' is the paragraph selector for the p HTML element.
-Go take a look at the <p></p> tags in your index.html file and come back.
+ p is the html element. <----- Commit this word element to memory. We'll use it a lot.
+<p> is the opening tag.
+</p> is the closing tag.
+A sentence in html commonly looks like this:
+<p> The quick brown fox jumped over the lazy dog. </p>
 
+So now let's talk about how CSS fits into this.
+CSS understands the basic html elements such as p, body, head, a, etc and we can use these to style our page.
+In CSS, the letter 'p' is the paragraph selector for the p HTML element.
+
+It can be hard to remember the language here. I think of it like this.
+"The CSS selector selects the HTML element."
+
+Now, go take a look at the <p></p> tags in your index.html file and come back. There's a bunch, right?
+
+
+OK. Let's style that text!
 When we create a p selector in our CSS file, we are creating a design rule that wil be applied to every <p> tag in our html file.
-An empty pe selector won't do anything, though. Boring!
+An empty p selector won't do anything, though. Boring!
 p {
 
 }
 
-Let's get fany and add some properties inside this 'p' selector.
+Let's get fancy and add some properties and values inside this 'p' selector.
 
 p {
     color: blueviolet;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
 }
 
-This will do three things to the text that lives inside our html <p></p> tags. It will: 
-- Change the font color from black (the default) to blueviolet, 
-- Align the text left, 
-- Set the font size from 16px (the default) to 18px!
+We added three property value pairs so this will do three things to the text that lives inside our html file's <p></p> tags. 
+
+It will: 
+- Change the font color from black (the browser default) to blueviolet, 
+- Align the text from left (the browser default) to center, 
+- Set the font size from 16px (the browser default) to 18px!
 */
 
 p {
     color: blueviolet;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
-}
-
-p {
-    color: blueviolet;
-    /* color: #8A2BE2;
-  color: rgb(138,43,226); */
 }
