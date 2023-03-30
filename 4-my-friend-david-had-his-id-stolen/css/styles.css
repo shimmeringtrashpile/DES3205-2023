@@ -1,48 +1,31 @@
 /* 
-  Lesson 4! id
+  Lesson 4! IDs
  
-  We've learned a few different ways to add color to our text. That's awesome!
-  But we have a problem. We currently only know how to change the color of EVERY p element in our html.
-  This is not great. It just isn't very granular. It's like painting every room of an apartment the same color.
+  In a previos lesson we learned about element selectors. Here we are selecting the p element.
+
+  p {
+    color: blueviolet;
+  }
   
-  This is where classes come in.
+  We've also learned about class selectors. Here we are selecting the imani element.
 
-  Let's start with HTML first. Here's twelve short paragraphs of Imani and Carmen having a conversation about what they're doing tonight.
+  .imani {
+    color: blueviolet;
+  }
 
-  <p>Hello.</p>
-  <p>Whassup...</p>
-  <p>Are you going to that party tonight?</p>
-  <p>There's going to be pizza.</p>
-  <p>Hello. Carmen? Are you there?</p>
-  <p>Sorry I can't stop thinking about design systems.</p>
-  <p>I was going to go to the party... But there's a new documentary about Javascript out.</p>
-  <p>I think Javascript might win over pizza.</p>
-  <p>Wow. You are a serious design nerd.</p>
-  <p>Will you go with me if I let you bring your laptop?</p>
-  <p>Oh my gosh. Am I that bad?</p>
-  <p>YES. YOU ARE THAT BAD!</p>
+  There are a few more selector types to learn about!
 
-  This conversation would be easier to follow if each speaker had a unique color for their text.
-  But based on this html there currently isn't any way to make some p elements purple and other p elements orange.
-  They are all just p elements!
-  We could make the p elements ALL purple or ALL orange. But that doesn't help us!
+  In HTML there is an attribute called "id." This attribute gives an element a unique identifier. 
+  Notice I said UNIQUE identifier. There should be only one id element with the same name on a page. 
 
-  Classes are here to help us out. Let's start with our first sentence spoken by Imani.
-  <p>Hello.</p>
-
-  Let's add imani's name as a class attribute to the p element.
-  <p class="imani">Hello.</p>
-
-  Carmen replied "Whassup..." Let's add her name as a class attribute onto her reply.
-  <p class="carmen">Whassup...</p>
-
-  We now have two different class attributes:
-  <p class="imani">Hello.</p>
-  <p class="carmen">Whassup...</p>
-
-  Things are getting interesting. We can see, based on our class names, who is speaking.
-  Let's keep adding our class attributes to each speaker's sentences in the conversation.
-
+  Here's an example. I'll add a p element at the top of our conversation.
+  
+  <p>Imani and Carmen are Best Friends</p>
+   
+  Now let's add an id called "intro." This looks like: <p id="intro">
+  We're going to use this id of "intro" to identify the introduction of our conversation between Imani and Carmen.
+  
+  <p id="intro">Imani and Carmen are Best Friends</p>
   <p class="imani">Hello.</p>
   <p class="carmen">Whassup...</p>
   <p class="imani">Are you going to that party tonight?</p>
@@ -56,48 +39,54 @@
   <p class="carmen">Oh my gosh. Am I that bad?</p>
   <p class="imani">YES. YOU ARE THAT BAD!</p>
 
-  These class attributes 'imani' and 'carmen' added to our p elements are already helping us understand the flow of the conversation.
-  Now we need top update our CSS to look for these classes.
+  We have an ID in our HTML! Now we need to create an ID selector so we can apply our styling!
 
-  A reminder that in CSS we create things called selectors.
-  These selectors are SELECTING things from our html to style.
+  To create an ID selector we use a # symbol, also known as a "pound sign" or "hash" in our css file.
+  This # symbol tell's the browser to look for IDs in our HTML and style them. 
+  
+  Let's make the styling for this "intro" id large and colorful.
+  */
 
-  Here's a short reminder from Lesson 2.
-  This is a selector looking for all p elements to turn them blueviolet.
-
-  p {
-      color: blueviolet;
-  }
-
-  Becuase this selector is looking for any p elements it is called an "element selector."
-  But we want a selector that is looking for our class attributes!
-  We need a selector known as a "class selector."
-
-  Class selectors are funky. They start with periods. It's weird. For now I'm going to say "Just get used to it."
-
-  .imani {
-      color: blueviolet;
-  }
-
-  I'll tell you how I keep this in my head. In high school we had six periods in the day and a class assigned to each one.
-  So when I see the period punctuation mark, I think "class!" This is goofy, I know. But I find it helpful. 
-  What mnemonic device are you going to use to help you remember that CSS class names start with a period?
-
-  OK. Back to our conversation.
-  We made a class selector for Imani.
-
-  .imani {
-      color: blueviolet;
-  }
-
-  OK! Now it's your turn.
-  Add a class selector for Carmen underneath this one for Imani.
-  Use orangered for the color. */
+#intro {
+    color: powderblue;
+    font-size: 20px;
+    text-align: center;
+    background-color: magenta;
+    line-height: 64px
+}
 
 .imani {
     color: blueviolet;
 }
 
+.carmen {
+    color: orangered;
+}
 
-/* That's it! You've completed the lesson!
-Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! */
+
+/* OK! Now it's your turn.
+We're going to start with some throwback tasks from our old lessons to keep our memory sharp.
+
+Step 1. Change the intro IDs color property to the rgb values for powderblue.
+Step 2. Change the intro IDs background-color property to the hex value for magenta.
+Step 3. Change the intro ID's line-height property to a value of 72px.
+Step 4. Change Carmen's type color to the HSL value that represents the hex color #cc0000.
+
+The New Stuff Starts Here!
+Step 5. In your HTML file, Create a new set of p tags above your intro paragraph. 
+        Give this p an ID called "chapter"
+        Inside the p tags type the text 'Chapter 1: A New Beginning' (Do not type the ' marks)
+Step 6. In your styles.css file create a new ID selector called "chapter"
+Step 7. In your chapter id selector
+        Apply type color using rgba values of 159, 226, 191, .8
+        Apply a type size of 32px.
+        Apply a font-weight of bold.
+        Align your text to the center.
+        Set your background-color to #FF7F50
+        Set your line height to 88px
+
+That's it! You've completed the lesson!
+Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
+My friend David had his ID stolen.
+He goes by Dav now.
+*/
