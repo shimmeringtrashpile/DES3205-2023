@@ -10,13 +10,13 @@
   }
 
   There's 148 color names. These are called the 'Named Colors.'
-  The most recently added named color is rebeccapurple. I'll let you do a web search to find why it is called that.
+  The most recently added Named Color is rebeccapurple. I'll let you do a web search to find out who Rebecca is.
 
   OK. Named Colors... Great. But there's only 148! That isn't very many!
   There are other ways to define colors in CSS. I'll share a few ways here.
 
-  The second and probably still most popular way is using HEX values.
-  Our color blueviolet can be described with hex values as well.
+  The second and probably still most popular way to add color values in CSS is by using HEX values.
+  Our color blueviolet can be described with hex values as well. #8A2BE2 is the exact same color as blueviolet.
 
   p {
       color: #8A2BE2;
@@ -40,11 +40,11 @@ p {
 }
 
 
-/* OK! Now it's your turn. You're going to modify that p selector code above.
-Change the color value. Pick a color value using one of these names. https://www.w3schools.com/cssref/css_colors.php
-Remove the text-align property and value.
-Change font-size to something bigger. You pick.
-Add a 'background-color' property and pick another color value. 
+/* OK! Now it's your turn. You're going to modify that p selector above.
+Step 1: Change the color value. Pick a color value using one of these names. https://www.w3schools.com/cssref/css_colors.php
+Step 2: Remove the text-align property and value.
+Step 3: Change font-size to something bigger. You pick.
+Step 4: Add a 'background-color' property and pick another color value. 
 
 That's it! You've completed Lesson 1!
 Take a screenshot of your web browser and send it to me to show you've completed the lesson!
