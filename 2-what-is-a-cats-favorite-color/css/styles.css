@@ -2,8 +2,7 @@
   Lesson 2!
   Let's talk about color.
   
-  So far we have used the name of a color inside our p selector to style our p element.
-
+  In Lesson 1 we used the name of a color inside our p selector to style our p element.
   p {
       color: blueviolet;
   }
@@ -191,4 +190,4 @@ Step 1: Change the color value to the rgb value that represents the indigo named
 Step 2: Change the background-color value to the hsl color that represents the lemonchiffon named color.
 
 That's it! You've completed Lesson 2!
-Take a screenshot of your web browser and send it to me to show you've completed the lesson! */
+Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! */

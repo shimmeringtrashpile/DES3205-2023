@@ -1,0 +1,103 @@
+/* 
+  Lesson 3! Stay Classy.
+ 
+  We've learned a few different ways to add color to our text. That's awesome!
+  But we have a problem. We currently only know how to change the color of EVERY p element in our html.
+  This is not great. It just isn't very granular. It's like painting every room of an apartment the same color.
+  
+  This is where classes come in.
+
+  Let's start with HTML first. Here's twelve short paragraphs of Imani and Carmen having a conversation about what they're doing tonight.
+
+  <p>Hello.</p>
+  <p>Whassup...</p>
+  <p>Are you going to that party tonight?</p>
+  <p>There's going to be pizza.</p>
+  <p>Hello. Carmen? Are you there?</p>
+  <p>Sorry I can't stop thinking about design systems.</p>
+  <p>I was going to go to the party... But there's a new documentary about Javascript out.</p>
+  <p>I think Javascript might win over pizza.</p>
+  <p>Wow. You are a serious design nerd.</p>
+  <p>Will you go with me if I let you bring your laptop?</p>
+  <p>Oh my gosh. Am I that bad?</p>
+  <p>YES. YOU ARE THAT BAD!</p>
+
+  This conversation would be easier to follow if each speaker had a unique color for their text.
+  But based on this html there currently isn't any way to make some p elements purple and other p elements orange.
+  They are all just p elements!
+  We could make the p elements ALL purple or ALL orange. But that doesn't help us!
+
+  Classes are here to help us out. Let's start with our first sentence spoken by Imani.
+  <p>Hello.</p>
+
+  Let's add imani's name as a class attribute to the p element.
+  <p class="imani">Hello.</p>
+
+  Carmen replied "Whassup..." Let's add her name as a class attribute onto her reply.
+  <p class="carmen">Whassup...</p>
+
+  We now have two different class attributes:
+  <p class="imani">Hello.</p>
+  <p class="carmen">Whassup...</p>
+
+  Things are getting interesting. We can see, based on our class names, who is speaking.
+  Let's keep adding our class attributes to each speaker's sentences in the conversation.
+
+  <p class="imani">Hello.</p>
+  <p class="carmen">Whassup...</p>
+  <p class="imani">Are you going to that party tonight?</p>
+  <p class="imani">There's going to be pizza.</p>
+  <p class="imani">Hello. Carmen? Are you there?</p>
+  <p class="carmen">Sorry I can't stop thinking about design systems.</p>
+  <p class="carmen">I was going to go to the party... But there's a new documentary about Javascript out.</p>
+  <p class="carmen">I think Javascript might win over pizza.</p>
+  <p class="imani">Wow. You are a serious design nerd.</p>
+  <p class="imani">Will you go with me if I let you bring your laptop?</p>
+  <p class="carmen">Oh my gosh. Am I that bad?</p>
+  <p class="imani">YES. YOU ARE THAT BAD!</p>
+
+  These class attributes 'imani' and 'carmen' added to our p elements are already helping us understand the flow of the conversation.
+  Now we need top update our CSS to look for these classes.
+
+  A reminder that in CSS we create things called selectors.
+  These selectors are SELECTING things from our html to style.
+
+  Here's a short reminder from Lesson 2.
+  This is a selector looking for all p elements to turn them blueviolet.
+
+  p {
+      color: blueviolet;
+  }
+
+  Becuase this selector is looking for any p elements it is called an "element selector."
+  But we want a selector that is looking for our class attributes!
+  We need a selector known as a "class selector."
+
+  Class selectors are funky. They start with periods. It's weird. For now I'm going to say "Just get used to it."
+
+  .imani {
+      color: blueviolet;
+  }
+
+  I'll tell you how I keep this in my head. In high school we had six periods in the day and a class assigned to each one.
+  So when I see the period punctuation mark, I think "class!" This is goofy, I know. But I find it helpful. 
+  What mnemonic device are you going to use to help you remember that CSS class names start with a period?
+
+  OK. Back to our conversation.
+  We made a class selector for Imani.
+
+  .imani {
+      color: blueviolet;
+  }
+
+  OK! Now it's your turn.
+  Add a class selector for Carmen underneath this one for Imani.
+  Use orangered for the color. */
+
+.imani {
+    color: blueviolet;
+}
+
+
+/* That's it! You've completed the lesson!
+Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! */
