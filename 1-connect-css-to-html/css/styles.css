@@ -1,0 +1,61 @@
+/* 
+  Welcome to the CSS file!
+  CSS files are commonly named 'style.css' or 'styles.css' You can name it whatever you want.
+  CSS files are were you create your design rules for your html. 
+  These design rules are called selectors. 
+  These selectors hold stuff in between {}, also known as curly braces.
+  The stuff in these curly braces must be pairs of text called 'property value pairs.'
+  I realize that sounds like some sort of real estate thing! But let's keep going and it should start to make sense.
+  A property can be something like 'color,' for a text color like blueviolet.
+                                or 'align,' for text alignments like left right and center.
+                                or 'font-size' for things like 16px.
+  You computer understands that you've given it a property value pair when it sees a :, also known as a colon.
+  Here's the structure of a selector that contains three property value pairs. 
+  It's the template your computer is looking for to take your design rule and apply it to your html.
+
+selector {
+  property1: valueA
+  property2: valueB
+  property3: valueC
+} 
+
+This is just the template though. Let's make an actual useful selector!
+As we know, text is the most basic component of design.
+Most html files have body copy. 
+Web browser's know, "When I see a tag with the p element inside, <p></p>, that's body copy!"
+The letter p stands for paragraph.
+CSS understands these basic html elements such as p, body, head, a, etc and we can use these to style our page.
+The letter 'p' is the paragraph selector for the p HTML element.
+Go take a look at the <p></p> tags in your index.html file and come back.
+
+When we create a p selector in our CSS file, we are creating a design rule that wil be applied to every <p> tag in our html file.
+An empty pe selector won't do anything, though. Boring!
+p {
+
+}
+
+Let's get fany and add some properties inside this 'p' selector.
+
+p {
+    color: blueviolet;
+    text-align: left;
+    font-size: 18px;
+}
+
+This will do three things to the text that lives inside our html <p></p> tags. It will: 
+- Change the font color from black (the default) to blueviolet, 
+- Align the text left, 
+- Set the font size from 16px (the default) to 18px!
+*/
+
+p {
+    color: blueviolet;
+    text-align: left;
+    font-size: 18px;
+}
+
+p {
+    color: blueviolet;
+    /* color: #8A2BE2;
+  color: rgb(138,43,226); */
+}
