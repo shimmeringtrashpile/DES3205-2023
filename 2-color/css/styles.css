@@ -142,7 +142,7 @@
   Is there an Alpha? No. There isn't. This is a downside of the Hex Color and Named Color systems.
 
 
-  
+
   And for our final act, let's talk about HSLA Color!
 
   HSLA stands for Hue, Saturation, and Lightness and we get our friend Alpha for transparency.
@@ -176,31 +176,19 @@ In CSS we add the alpha value on much like we do in RGBA. We only use show it wh
 p {
   color:  hsla(271, 76%, 53%, 0.8);
 }
-
-
-
-
-
-
-
-
-
 */
 
 p {
     color: blueviolet;
     text-align: center;
     font-size: 18px;
-    background-color:
+    background-color: lemonchiffon;
 }
 
 
-/* OK! Now it's your turn. You're going to modify that p selector above.
-Step 1: Change the color value. Pick a color value using one of these names. https://www.w3schools.com/cssref/css_colors.php
-Step 2: Remove the text-align property and value.
-Step 3: Change font-size to something bigger. You pick.
-Step 4: Add a 'background-color' property and pick another color value. 
+/* OK! Now it's your turn. You're going to modify that p selector code above.
+Step 1: Change the color value to the rgb value that represents the indigo named color.
+Step 2: Change the background-color value to the hsl color that represents the lemonchiffon named color.
 
-That's it! You've completed Lesson 1!
-Take a screenshot of your web browser and send it to me to show you've completed the lesson!
-*/
+That's it! You've completed Lesson 2!
+Take a screenshot of your web browser and send it to me to show you've completed the lesson! */
