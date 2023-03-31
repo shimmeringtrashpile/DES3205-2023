@@ -39,10 +39,10 @@ h2 {
 
 
 /* Recipe-container is a dark background, so need to style our p text with light-colored text. 
-   Notice there are two selectors here seperated by a space. 
+   Notice there are two selectors here separated by a space. 
    The first selector is an ID selector called #recipe-container. 
    The second selector is an element selector called p.
-   When two selectors are seperated by a space they are called Nested Selectors.
+   When two selectors are separated by a space they are called Nested Selectors.
    You can think of this nesting like russian nesting dolls. 
    Reference: https://www.macalester.edu/russian/about/resources/miscellany/matryoshka/
    I have an easier time thinking about how nested selectors work when I read them from right-to-left like this.
@@ -72,7 +72,7 @@ h2 {
 }
 
 
-/* You will notice this style is two selectors seperated by a COMMA. Comma-seperated selectors work like an "or."
+/* You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
    This style will be applied to my class .ingredients and my class .preparation inside my recipe-container ID. */
 
 #recipe-container .ingredients,
@@ -82,7 +82,7 @@ h2 {
 }
 
 
-/* You will notice this style is two selectors seperated by a COMMA. Comma-seperated selectors work like an "or."
+/* You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
    White color will be applied to ordered lists (ol), also known as numbered lists 
    OR unordered lists (ul) which you might think of as "bulleted lists."
    */

@@ -1,5 +1,4 @@
-/* 
-  Lesson 2! Color!
+/* Lesson 2! Color!
   
   In Lesson 1 we used the name of a color inside our p selector to style our p element.
   p {
@@ -9,13 +8,13 @@
   There's 148 color names. These are called the 'Named Colors.'
   The most recently added Named Color is rebeccapurple. I'll let you do a web search to find out who Rebecca is.
 
-  OK. Named Colors... Great. But there's only 148! That isn't very many!
+  OK. Named Colors... Great. But th1ere's only 148! That isn't very many!
   There are other ways to define colors in CSS. I'll share a few ways here.
 
 
   RGBA Color
   A second way to create a color value in CSS is to use red green blue (rgb) values.
-  These values go from 0 to 255. There some computer science-y reasons for this 0 to 255 range we won't get into righht now.
+  These values go from 0 to 255. There some computer science-y reasons for this 0 to 255 range we won't get into right now.
 
   Our blueviolet color in RGB is rgb(138, 43, 226)
 
@@ -36,7 +35,7 @@
   Yep! That is definitely a purpley-blue color!
 
   Notice on line 18 I said RGBA color. So what about that A?
-  A is for our alpha channel! We get transparancy with RGBA color!
+  A is for our alpha channel! We get transparency with RGBA color!
   Note: This last digit is a bit different. It doesn't go all the way from 0 to 255. It only goes between 0 and 1!
   0 is totally transparent. 1 is totally opaque. So half opacity is .5!
 
@@ -64,7 +63,7 @@
 
   HEX Color
   The third and still most popular way to add color values in CSS is by using HEX values.
-  Our color blueviolet can be described as a hexidecimal value using #8A2BE2.
+  Our color blueviolet can be described as a hexadecimal value using #8A2BE2.
 
   p {
       color: #8A2BE2;
@@ -125,7 +124,7 @@
 
   Ah ha! Look at our friend rgb color! 255 means the maximum of a color!
   In rgb, red is rgb(255, 0, 0) in hex it is #FF0000
-  If we perform the hexadecimal calcuation we learn that FF is hex for 255!
+  If we perform the hexadecimal calculation we learn that FF is hex for 255!
   It's the same system just expressed differently!
 
   You might be asking, do I really need to do all that math? The answer is no. There's plenty of converters online.
@@ -169,11 +168,11 @@
   Alpha starts at 0.0 (fully transparent) and goes up to 1.0 (not transparent at all).
   Alpha in HSLA is described with two digits. This is a bit different than in our RGBA system.
 
-In CSS we add the alpha value on much like we do in RGBA. We only use show it when we need it.
+  In CSS we add the alpha value on much like we do in RGBA. We only use show it when we need it.
 
-p {
-  color:  hsla(271, 76%, 53%, 0.8);
-}
+  p {
+    color:  hsla(271, 76%, 53%, 0.8);
+  }
 */
 
 p {
@@ -185,12 +184,10 @@ p {
 
 
 /* OK! Now it's your turn. You're going to modify that p selector code above.
-Step 1: Change the color value to the rgb value that represents the indigo named color.
-Step 2: Change the background-color value to the hsl color that represents the lemonchiffon named color.
+  Step 1: Change the color value to the rgb value that represents the indigo named color.
+  Step 2: Change the background-color value to the hsl color that represents the lemonchiffon named color.
 
-That's it! You've completed Lesson 2!
-Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
-What's a cat's favorite color? PURR-ple!
-
-
+  That's it! You've completed Lesson 2!
+  Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
+  What's a cat's favorite color? PURR-ple!
 */

@@ -1,5 +1,4 @@
-/* 
-  Lesson 3! Classes
+/* Lesson 3! Classes
  
   We've learned a few different ways to add color to our text. That's awesome!
   But we have a problem. We currently only know how to change the color of EVERY p element in our html.
@@ -69,7 +68,7 @@
       color: blueviolet;
   }
 
-  Becuase this selector is looking for any p elements it is called an "element selector."
+  Because this selector is looking for any p elements it is called an "element selector."
   But we want a selector that is looking for our class attributes!
   We need a selector known as a "class selector."
 
@@ -92,7 +91,8 @@
 
   OK! Now it's your turn.
   Add a class selector for Carmen underneath this one for Imani.
-  Use orangered for the color. */
+  Use orangered for the color. 
+*/
 
 .imani {
     color: blueviolet;
@@ -100,7 +100,7 @@
 
 
 /* That's it! You've completed the lesson!
-Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson!
-Why did the egg get kicked out of class? 
-He kept telling yolks!
+  Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson!
+  Why did the egg get kicked out of class? 
+  He kept telling yolks!
 */

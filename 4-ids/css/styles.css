@@ -65,28 +65,26 @@
 
 
 /* OK! Now it's your turn.
-We're going to start with some throwback tasks from our old lessons to keep our memory sharp.
+  We're going to start with some throwback tasks from our old lessons to keep our memory sharp.
 
-Step 1. Change the intro IDs color property to the rgb values for powderblue.
-Step 2. Change the intro IDs background-color property to the hex value for magenta.
-Step 3. Change the intro ID's line-height property to a value of 72px.
-Step 4. Change Carmen's type color to the HSL value that represents the hex color #cc0000.
+  Step 1. Change the intro IDs color property to the rgb values for powderblue.
+  Step 2. Change the intro IDs background-color property to the hex value for magenta.
+  Step 3. Change the intro ID's line-height property to a value of 72px.
+  Step 4. Change Carmen's type color to the HSL value that represents the hex color #cc0000.
 
-The New Stuff Starts Here!
-Step 5. In your HTML file, Create a new set of p tags above your intro paragraph. 
-        Give this p an ID called "chapter"
-        Inside the p tags type the text 'Chapter 1: A New Beginning' (Do not type the ' marks)
-Step 6. In your styles.css file create a new ID selector called "chapter"
-Step 7. In your chapter id selector
-        Apply type color using rgba values of 159, 226, 191, .8
-        Apply a type size of 32px.
-        Apply a font-weight of bold.
-        Align your text to the center.
-        Set your background-color to #FF7F50
-        Set your line height to 88px
+  The New Stuff Starts Here!
+  Step 5. In your HTML file, Create a new set of p tags above your intro paragraph. 
+          Give this p an ID called "chapter"
+          Inside the p tags type the text 'Chapter 1: A New Beginning' (Do not type the ' marks)
+  Step 6. In your styles.css file create a new ID selector called "chapter"
+  Step 7. In your chapter id selector
+          Apply type color using rgba values of 159, 226, 191, .8
+          Apply a type size of 32px.
+          Apply a font-weight of bold.
+          Align your text to the center.
+          Set your background-color to #FF7F50
+          Set your line height to 88px
 
-That's it! You've completed the lesson!
-Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
-My friend David had his ID stolen.
-He goes by Dav now.
+  That's it! You've completed the lesson!
+  Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
 */

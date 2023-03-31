@@ -1,23 +1,135 @@
 /* 
   Lesson 5! DIVS
  
-  In a previous lesson we learned about element selectors, id selectors and class selectors and we applied those selectors to p elements.
+  In a previous lesson we learned about 
+  element selectors, 
+  id selectors and 
+  class selectors 
+  and we applied all those selectors to p elements.
 
-  In this lesson we're going to talk about div elementss or "divisions." Divs are probably the most important html element to a designer. 
-  They are used almost EVERYWHERE and for almost EVERYTHING. 
-  A div has a very general definition. The best way to think of a div is "a chunk of the page."
+  There's, of course, a lot more than just p elements! In this lesson we're going to review the most important one to us designers.
 
-  We have a div in our html already. Go check it out in the index.html file. There it is! <div></div>!
-
+  This element is the div element or "division" element!
   
+  Divs are probably the most important html element to a designer because they are used to spatially construct things on our pages.
+  Div has a very general definition. The best way to think of a div is "a chunk of the page." 
+  Because of this general "chunk of stuff" concept, divs are very flexible and are used almost EVERYWHERE and for almost EVERYTHING. 
+
+  We have a div in our html already! Go check out in the index.html file in this lesson. There it is! <div></div>!
+  We aren't currently doing anything with this div, so it probably shouldn't be there. 
+  That's messy coding practice! But here we are, and there it is so let's use it!
+
+  Divs can have classes and ID attributes just like our p elements. Because of that we can easily create CSS selectors for our divs!
+  Let's see what a class might look like on a div and talk about styling that class.
+  In our html we have a div with a class 'recipe-card.'
+
+  <div class="recipe-card">
+
+  So let's make an empty class selector that looks like this
+  .recipe-card {
+
+  }
+
+  So far, so good!
+
+  Uncomment this .recipe-card class selector and see what happens to our html
+*/
 
 
+/* .recipe-card {
+    background-color: lemonchiffon;
+    width: 200px;
+} */
 
 
+/* We have a rectangle that looks a lot like a Post-It note.
+  Add this line to your class selector above just under the 'width: 200px;' property value pair.
+
+  padding: 20px;
+  Take a look at what happened and describe what you're seeing here:
 
 
-  That's it! You've completed the lesson!
-  Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
-  My friend David had his ID stolen.
-  He goes by Dav now.
-  */
+  A thing worth noticing is the top and bottom of the box seeeeeems to have a lot more padding than 20px.
+  This is not the padding's fault! This is because the p tags inside the box have a top and bottom margin of 16px, 
+  so it just LOOKS like our box has more padding on the top and bottom.
+
+  Use your Google Chrome Developer Toolbar and it's Element Selector to mouse over your p elements and you will see this margin!
+  I bring this up because this is a great example of browser defaults doing a thing that feels hidden to you and is making you annoyed.
+  You didn't know about this 16px thing and you're stuck. The Dev Toolbar combined with searching the web a lot can really help.
+  In Chrome the margin-top (above the element) and margin-bottom (below the element) of the <p> tag is 16px (or 1em).
+  In Firefox, only the margin-bottom is 16px.
+  Yes! They are different! But we'll get it resolved.
+
+  We have two options here. Either modify our p element margins, or adjust our .recipe-card selector's 20px padding.
+  For today, we'll take the easy route and adjust our recipe-card selector's 20px padding.
+
+  The padding property can have different padding amounts assigned for the top, right, left, and bottom of a div.
+  'padding: 20px' applies 20px of padding on the top, right, left, and bottom.
+  This one number, 20px, is applied to all four sides of the div. But this one number makes our box wonky looking!
+
+  So we need to change our top and bottom padding to accommodate the 16px of top and bottom padding added by our p elements.
+  The padding property has got us covered. It supports unique values for top, right, left and bottom! Ah ha!
+
+  So, change your
+  padding: 20px;
+  to
+  padding: 4px 20px 4px 20px;
+
+  And it works! You'll see that we subtracted 16 from our top and bottom numbers.
+
+  There's a few things to know here when working with padding.
+
+  First thing: How do you remember which of the four numbers is top, right, bottom and left?
+               I remember this like the face of an analog clock. Start at the top and rotate clockwise.
+               12 o'clock, 3 o'clock, 6 o'clock, 9 o'clock.  
+               padding: 4px 20px 4px 20px 
+               Our first 4px is at the 12 o'clock top position.
+               Our first 20px is at the 3 o'clock top position.
+               Our second 4px is at the 6 o'clock top position.
+               Our second 20px is at the 9 o'clock top position.
+  
+  Second thing: What if I just want to change the padding ONLY on the left side of my box?
+                You can do that! 
+                You could do this but it's a bit hard to read.
+                padding: 0px 0px 0px 20px
+
+                or you could do
+                padding-left: 20px
+                Note: padding-top, padding-right, padding-bottom all work as well!
+  
+  Third thing: I've seen padding with just two values. What is that for?
+               Sometimes you see a padding values like this:
+               
+               padding: 10px 40px;
+
+               Remember that the 
+               first number 10px is "top and bottom padding" and
+               second number 40px is "left and right padding"
+
+               Padding like this is common in things like MS Word documents where the
+               right and left margins of the document one height and the
+               header and footer spacings of the document are a different width.
+*/
+
+
+/* OK! Now it's your turn.
+  We're going to start with some throwback tasks from our old lessons to keep our memory sharp.
+
+  Step 1. Add a recipe-title class to the p element that contains 'My "Put the Pizza in Pizza Party" Pizza'
+  Step 2. Add a .recipe-title selector to your css file and add a font-weight: bold property value pair to it.
+  Step 3. Change the background color of your div to any color of your choosing. Use the HSL color system.
+
+  The New Stuff Starts Here!
+  Step 4. In your html file, add five more recipe card divs with unique title content. 
+          Style these divs with the same recipe-card class selector.
+  Step 5. Add a margin of 30px to your recipe-card class selector.
+  Step 6. Take a look at these changes to your html page using Chrome Dev Toolbar. 
+          You might guess that there should be 30 + 30 = 60px of vertical white space between your divs. But there isn't!
+          Read this to find out why: https://www.w3schools.com/css/css_margin_collapse.asp
+  Step 7: Add the 'float: left' property value pair to your recipe-card class selector. 
+          Add this property just above the background-color property value pair. That's the common place to put floats.
+          What happened to your recipe cards?
+
+/* That's it! You've completed the lesson! 
+   Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson!  
+*/
