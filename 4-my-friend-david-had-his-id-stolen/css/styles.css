@@ -29,7 +29,7 @@
   <p class="imani">Hello.</p>
   <p class="carmen">Whassup...</p>
   <p class="imani">Are you going to that party tonight?</p>
-  <p class="imani">There's going to be pizza.</p>
+  <p class="imani">I think I'm going to make pizzas and bring them.</p>
   <p class="imani">Hello. Carmen? Are you there?</p>
   <p class="carmen">Sorry I can't stop thinking about design systems.</p>
   <p class="carmen">I was going to go to the party... But there's a new documentary about Javascript out.</p>
@@ -43,7 +43,7 @@
 
   To create an ID selector we use a # symbol, also known as a "pound sign" or "hash" in our css file.
   This # symbol tell's the browser to look for IDs in our HTML and style them. 
-  
+
   Let's make the styling for this "intro" id large and colorful.
   */
 

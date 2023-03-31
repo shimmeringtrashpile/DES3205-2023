@@ -1,0 +1,92 @@
+/* Combining Selectors */
+
+p {
+    font-size: 18px
+}
+
+h1 {
+    font-size: 32px
+}
+
+h2 {
+    font-size: 28px
+}
+
+#intro {
+    color: powderblue;
+    font-size: 20px;
+    text-align: center;
+    background-color: magenta;
+    line-height: 64px
+}
+
+.imani {
+    color: blueviolet;
+}
+
+.carmen {
+    color: orangered;
+}
+
+
+/* We have a DIV element in our HTML with this ID */
+
+#recipe-container {
+    width: 80%;
+    padding: 18px;
+    background-color: rgb(16, 16, 16);
+}
+
+
+/* Recipe-container is a dark background.
+   We need to style our p text with light gray text. 
+   Notice there are two selectors here seperated by a space. 
+   The first selector is an ID selector called #recipe-container. 
+   The second selector is an element selector called p.
+   When two selectors are seperated by a space they are called Nested Selectors.
+   You can think of this nesting like the Russian Nesting Dolls. 
+   Reference: https://www.macalester.edu/russian/about/resources/miscellany/matryoshka/
+   I have an easier time thinking about how nested selectors work when I read them from right-to-left like this.
+   "This style will be applied to p elements inside my #recipe-container ID."
+*/
+
+#recipe-container p {
+    color: rgb(190, 190, 190);
+    font-size: 16px
+}
+
+
+/* Recipe-container is a dark background so need to style our title text to a light color.
+   This style will be applied to title classes inside my recipe-container ID.
+*/
+
+#recipe-container .title {
+    color: white;
+    font-size: 28px;
+}
+
+
+/* This style will be applied to subtitle classes inside my recipe-container ID. */
+
+#recipe-container .subtitle {
+    font-size: 24px
+}
+
+
+/* This style will be applied to ingredients classes inside my recipe-container ID. */
+
+#recipe-container .ingredients {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* You will notice this style is two selectors seperated by a COMMA. Comma-seperated selectors work like an "or."
+   White color will be applied to ordered lists (ol), also known as numbered lists 
+   OR unordered lists (ul) which you might think of as "bulleted lists."
+   */
+
+ul,
+ol {
+    color: white;
+}
