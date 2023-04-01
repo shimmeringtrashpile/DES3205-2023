@@ -1,8 +1,25 @@
-/* Combining Selectors */
+/* 
+  Lesson 5! Combining Selectors
+  I'm going to start with some CSS that might be new to you.
+  One of the things you will do a LOT is look at CSS and HTML that has already been written. 
+  So let's start doing that now.
+  Go ahead and look at your html file and then run it in your browser so you can see the output.
+*/
+
+
+/* Below is a p element selector that sets all of our p element text size to 18px. 
+   It is common to see element selectors like this one at the top of a CSS file.
+   Element selectors are commonly placed at the top because they are the least specific rules.
+   Becuase they are the least specific rule they will likely be applied to a lot of things on your page.
+   You might see element selectors that impact: all p elements, all h1, h2 and h3 elements, all div elements, etc.
+*/
 
 p {
     font-size: 18px
 }
+
+
+/* These are h1 and h2 element selectors setting the text size. */
 
 h1 {
     font-size: 32px
@@ -12,6 +29,11 @@ h2 {
     font-size: 28px
 }
 
+
+/* This selector starts with a #. What type of selector is this? 
+   Take a look at your html file. What html element is using this selector?
+*/
+
 #intro {
     color: powderblue;
     font-size: 20px;
@@ -19,6 +41,9 @@ h2 {
     background-color: magenta;
     line-height: 64px
 }
+
+
+/* These are our class selectors for Imani and Carmen's sentences. */
 
 .imani {
     color: blueviolet;
@@ -38,15 +63,17 @@ h2 {
 }
 
 
-/* Recipe-container is a dark background, so need to style our p text with light-colored text. 
-   Notice there are two selectors here separated by a space. 
+/* Recipe-container is a dark background, so we need to style our p text with light-colored text. 
+
+   Also, notice there are two selectors here separated by a space. 
    The first selector is an ID selector called #recipe-container. 
    The second selector is an element selector called p.
-   When two selectors are separated by a space they are called Nested Selectors.
+
+   When two selectors are separated by a SPACE they are called Nested Selectors.
    You can think of this nesting like russian nesting dolls. 
    Reference: https://www.macalester.edu/russian/about/resources/miscellany/matryoshka/
    I have an easier time thinking about how nested selectors work when I read them from right-to-left like this.
-   "This style will be applied to p elements inside my #recipe-container ID."
+   "This style will be applied to p elements nested inside my #recipe-container ID."
 */
 
 #recipe-container p {
@@ -56,7 +83,7 @@ h2 {
 
 
 /* Recipe-container is a dark background so need to style our title text to a light color.
-   This style will be applied to title classes inside my recipe-container ID.
+   This style will be applied to title classes nested inside my recipe-container ID.
 */
 
 #recipe-container .title {
@@ -65,7 +92,7 @@ h2 {
 }
 
 
-/* This style will be applied to subtitle classes inside my recipe-container ID. */
+/* This style will be applied to subtitle classes nested inside my recipe-container ID. */
 
 #recipe-container .subtitle {
     font-size: 24px
@@ -73,7 +100,7 @@ h2 {
 
 
 /* You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
-   This style will be applied to my class .ingredients and my class .preparation inside my recipe-container ID. */
+   This style will be applied to my class .ingredients OR my class .preparation. Both are nested inside my recipe-container ID. */
 
 #recipe-container .ingredients,
 #recipe-container .preparation {
@@ -83,8 +110,7 @@ h2 {
 
 
 /* You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
-   White color will be applied to ordered lists (ol), also known as numbered lists 
-   OR unordered lists (ul) which you might think of as "bulleted lists."
+   White color will be applied to ordered lists (ol), also known as numbered lists OR unordered lists (ul) which you might think of as "bulleted lists."
    */
 
 ul,

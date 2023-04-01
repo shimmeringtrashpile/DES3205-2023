@@ -32,7 +32,7 @@
 
   So far, so good!
 
-  Uncomment this .recipe-card class selector and see what happens to our html
+  Uncomment this .recipe-card class selector and see what happens when you view your html in the browser.
 */
 
 
@@ -42,15 +42,15 @@
 } */
 
 
-/* We have a rectangle that looks a lot like a Post-It note.
+/* We have a rectangle that looks similar to a Post-It note.
   Add this line to your class selector above just under the 'width: 200px;' property value pair.
 
   padding: 20px;
   Take a look at what happened and describe what you're seeing here:
 
 
-  A thing worth noticing is the top and bottom of the box seeeeeems to have a lot more padding than 20px.
-  This is not the padding's fault! This is because the p tags inside the box have a top and bottom margin of 16px, 
+  A symptom of applying padding to all sides is the top and bottom of the box seeeeeems to have a lot more padding than 20px.
+  This is not the padding's fault! The reason is the p tags inside the box have a top and bottom margin of 16px, 
   so it just LOOKS like our box has more padding on the top and bottom.
 
   Use your Google Chrome Developer Toolbar and it's Element Selector to mouse over your p elements and you will see this margin!
@@ -77,7 +77,7 @@
 
   And it works! You'll see that we subtracted 16 from our top and bottom numbers.
 
-  There's a few things to know here when working with padding.
+  There's many things to know here when working with padding. Here are three:
 
   First thing: How do you remember which of the four numbers is top, right, bottom and left?
                I remember this like the face of an analog clock. Start at the top and rotate clockwise.
