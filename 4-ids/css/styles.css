@@ -1,7 +1,7 @@
 /* 
-  Lesson 4! IDs
+  Module 4! IDs
  
-  In a previous lesson we learned about element selectors. Here we are selecting the p element.
+  In a previous module we learned about element selectors. Here we are selecting the p element.
 
   p {
     color: blueviolet;
@@ -15,29 +15,34 @@
 
   There are a few more selector types to learn about!
 
-  In HTML there is an attribute called "id." This attribute gives an element a unique identifier. 
-  Notice I said UNIQUE identifier. There should be only one id element with the same name on a page. 
+  In HTML there is an attribute called an "ID." This attribute gives an element a unique identifier. 
+  Notice I said UNIQUE identifier. There should be only one id element with the same name on a page.
+  When we get into more advanced topics we'll talk about why using a lot of IDs can be a pain in the butt. 
+  You never know when you're going to add a second item to a page that has the same ID. And then you have to convert it into a class!
+  Annoying! So I rarely use IDs. But you will see them quite often so it's very useful to know how they work. 
+  There is also a cool trick that ID's can do I'll share at the the end of this module.
 
   Here's an example. I'll add a p element at the top of our conversation.
   
   <p>Imani and Carmen are Best Friends</p>
    
-  Now let's add an id called "intro." This looks like: <p id="intro">
+  Now let's add an id to this p element called "intro." This looks like: <p id="intro">
   We're going to use this id of "intro" to identify the introduction of our conversation between Imani and Carmen.
   
-  <p id="intro">Imani and Carmen are Best Friends</p>
+  <p id="intro">Imani and Carmen Might Be Best Friends</p>
   <p class="imani">Hello.</p>
   <p class="carmen">Whassup...</p>
-  <p class="imani">Are you going to that party tonight?</p>
-  <p class="imani">I think I'm going to make pizzas and bring them.</p>
-  <p class="imani">Hello. Carmen? Are you there?</p>
-  <p class="carmen">Sorry I can't stop thinking about design systems.</p>
-  <p class="carmen">I was going to go to the party... But there's a new documentary about Javascript out.</p>
-  <p class="carmen">I think Javascript might win over pizza.</p>
-  <p class="imani">Wow. You are a serious design nerd.</p>
-  <p class="imani">Will you go with me if I let you bring your laptop?</p>
-  <p class="carmen">Oh my gosh. Am I that bad?</p>
-  <p class="imani">YES. YOU ARE THAT BAD!</p>
+  <p class="imani">Carmen, I think you might be my best friend.</p>
+  <p class="carmen">Shut up.</p>
+  <p class="imani">I'm serious! Be serious!</p>
+  <p class="carmen">I guess I'm supposed to be flattered.</p>
+  <p class="imani">You ARE supposed to be flattered, you jerk!</p>
+  <p class="carmen">OK. You never get mad at me. So I'm taking this seriously.</p>
+  <p class="imani">Good...</p>
+  <p class="imani">So, is it weird that I think you're my best friend?</p>
+  <p class="carmen">It's cool! But what am I, a psychologist?</p>
+  <p class="imani">I just don't know how I feel about it. I guess it doesn't matter. It just is.</p>
+  <p class="carmen">I like that. I found ten bucks. Let's go get tacos.</p>
 
   We have an ID in our HTML! Now we need to create an ID selector so we can apply our styling!
 
@@ -65,7 +70,7 @@
 
 
 /* OK! Now it's your turn.
-  We're going to start with some throwback tasks from our old lessons to keep our memory sharp.
+  We're going to start with some throwback tasks from our old modules to keep our memory sharp.
 
   Step 1. Change the intro IDs color property to the rgb values for powderblue.
   Step 2. Change the intro IDs background-color property to the hex value for magenta.
@@ -84,7 +89,17 @@
           Align your text to the center.
           Set your background-color to #FF7F50
           Set your line height to 88px
+  Step 8. We also have an id in our html called "pizza-party." 
+          In your styles.css file create a new ID selector called "pizza-party"
+  Step 9. In your #pizza-party id selector add the same styling that #intro has.
 
-  That's it! You've completed the lesson!
-  Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson! 
+  OK. So I said I'd share a cool thing about IDs in html. That cool thing is you can link directly to IDs in URLS.
+  Remember that ID in our page called pizza-party?
+  If you add #pizza-party onto the end of your url string, your browser will automatically go there:
+  Example: http://127.0.0.1:5500/4-ids/index.html#pizza-party
+  The page is already scrolled down to this id="pizza-party" section of the page!
+  This is EXTREMELY useful for web pages containing a lot of text. A person can send a link directly to a section of a page.
+
+  That's it! You've completed the module!
+  Take a screenshot of this css file and web browser window and send it to me to show you've completed the module! 
 */

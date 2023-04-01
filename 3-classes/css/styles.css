@@ -1,4 +1,4 @@
-/* Lesson 3! Classes
+/* Module 3! Classes
  
   We've learned a few different ways to add color to our text. That's awesome!
   But we have a problem. We currently only know how to change the color of EVERY p element in our html.
@@ -61,7 +61,7 @@
   A reminder that in CSS we create things called selectors.
   These selectors are SELECTING things from our html to style.
 
-  Here's a short reminder from Lesson 2.
+  Here's a short reminder from module 2.
   This is a selector looking for all p elements to turn them blueviolet.
 
   p {
@@ -99,8 +99,8 @@
 }
 
 
-/* That's it! You've completed the lesson!
-  Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson!
+/* That's it! You've completed the module!
+  Take a screenshot of this css file and web browser window and send it to me to show you've completed the module!
   Why did the egg get kicked out of class? 
   He kept telling yolks!
 */

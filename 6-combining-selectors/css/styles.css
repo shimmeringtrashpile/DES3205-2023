@@ -1,5 +1,7 @@
 /* 
-  Lesson 6! Combining Selectors
+  Module 6! Combining Selectors
+  We're going to talk about "grouping selectors" and "nesting selectors."
+  
   I'm going to start with some CSS that might be new to you.
   One of the things you will do a LOT is look at CSS and HTML that has already been written. 
   So let's start doing that now.
@@ -30,11 +32,18 @@ h2 {
 }
 
 
-/* This selector starts with a #. What type of selector is this? 
-   Take a look at your html file. What html element is using this selector?
+/* These selectors below start with a #. Do you remember what type of selectors these are? 
+   Take a look at your html file. What html elements are using these selectors?
+
+   GROUPING SELECTORS
+   You will also notice this style starts with two selectors separated by a COMMA.
+   This is called "grouping selectors" or "grouped selectors."
+   Comma-separating selectors in this way works like an "or" meaning this style will be applied to #ingredients OR #pizza-party.
+   If both exist on the page, they will BOTH be styled.
 */
 
-#intro {
+#intro,
+#pizza-party {
     color: powderblue;
     font-size: 20px;
     text-align: center;
@@ -54,56 +63,56 @@ h2 {
 }
 
 
-/* We have a DIV element in our HTML with this ID */
+/* We have a DIV element in our HTML with this class.
+   Check out what it is doing to our background.
+*/
 
-#recipe-container {
+.recipe-container {
     width: 80%;
     padding: 18px;
     background-color: rgb(16, 16, 16);
 }
 
 
-/* Recipe-container is a dark background, so we need to style our p text with light-colored text. 
-
-   Also, notice there are two selectors here separated by a space. 
-   The first selector is an ID selector called #recipe-container. 
-   The second selector is an element selector called p.
-
-   When two selectors are separated by a SPACE they are called Nested Selectors.
-   You can think of this nesting like russian nesting dolls. 
-   Reference: https://www.macalester.edu/russian/about/resources/miscellany/matryoshka/
-   I have an easier time thinking about how nested selectors work when I read them from right-to-left like this.
-   "This style will be applied to p elements nested inside my #recipe-container ID."
+/* Recipe-container is a dark background, so we need to style our .recipe-title with light-colored text. 
+   Becuase it is our title, we're going to make it pretty big.
 */
 
-#recipe-container p {
-    color: rgb(190, 190, 190);
-    font-size: 16px
-}
-
-
-/* Recipe-container is a dark background so need to style our title text to a light color.
-   This style will be applied to title classes nested inside my recipe-container ID.
-*/
-
-#recipe-container .title {
+.recipe-title {
     color: white;
     font-size: 28px;
 }
 
 
-/* This style will be applied to subtitle classes nested inside my recipe-container ID. */
+/* Recipe-container is a dark background so we need to style our subtitle and description text to a light color.
+   But we want this copy to be a bit more subtle than our .recipe-title, so we'll make it light gray.
+   You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
+   Reminder, this is called "grouping selectors."
+   This style will be applied to my class .recipe-subtitle OR class .recipe-description. 
+   If both exist on the page, they will BOTH be styled.
+*/
 
-#recipe-container .subtitle {
+.recipe-subtitle,
+.recipe-description {
+    color: rgb(190, 190, 190);
+}
+
+
+/* This style will be applied to our recipe-subtitle class. */
+
+.recipe-subtitle {
     font-size: 24px
 }
 
 
 /* You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
-   This style will be applied to my class .ingredients OR my class .preparation. Both are nested inside my recipe-container ID. */
+   This style will be applied to my class .ingredients OR my class .preparation.
+   Reminder, this is called "grouping selectors."
+   If both exist on the page, they will BOTH be styled.
+*/
 
-#recipe-container .ingredients,
-#recipe-container .preparation {
+.ingredients,
+.preparation {
     color: white;
     text-transform: uppercase;
 }
@@ -111,9 +120,32 @@ h2 {
 
 /* You will notice this style is two selectors separated by a COMMA. Comma-separated selectors work like an "or."
    White color will be applied to ordered lists (ol), also known as numbered lists OR unordered lists (ul) which you might think of as "bulleted lists."
+   Reminder, this is called "grouping selectors."
+   If both exist on the page, they will BOTH be styled.
    */
 
 ul,
 ol {
     color: white;
 }
+
+
+/* NESTING SELECTORS
+When two selectors are separated by a SPACE they are called "nesting selectors" or "nested selectors."
+You can think of this nesting like russian nesting dolls. 
+Reference: https://www.macalester.edu/russian/about/resources/miscellany/matryoshka/
+I have an easier time thinking about how nested selectors work when I read them from right-to-left like this.
+"This style will be applied to the li:last-child element nested inside my .ol (ordered list) class." 
+Note: You can add :last-child to li elements to pick the very last li item in lists.
+
+This nesting created by the space between ol and li says "only look at the li elements nested in our ol and that's it!" 
+We have an li:last-child up above in our UNORDERED list (ul) but it will NOT be changed to our orange becuase it isn't in our nest.
+*/
+
+ol li:last-child {
+    color: orange;
+}
+
+
+/* You don't have any tasks in this module. 
+   But please mess around with the html and css code here and experiment with nesting and grouping!

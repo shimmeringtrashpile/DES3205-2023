@@ -1,13 +1,13 @@
 /* 
-  Lesson 5! DIVS
+  Module 5! DIVS
  
-  In a previous lesson we learned about 
+  In a previous module we learned about 
   element selectors, 
   id selectors and 
   class selectors 
   and we applied all those selectors to p elements.
 
-  There's, of course, a lot more than just p elements! In this lesson we're going to review the most important one to us designers.
+  There's, of course, a lot more than just p elements! In this module we're going to review the most important one to us designers.
 
   This element is the div element or "division" element!
   
@@ -15,7 +15,7 @@
   Div has a very general definition. The best way to think of a div is "a chunk of the page." 
   Because of this general "chunk of stuff" concept, divs are very flexible and are used almost EVERYWHERE and for almost EVERYTHING. 
 
-  We have a div in our html already! Go check out in the index.html file in this lesson. There it is! <div></div>!
+  We have a div in our html already! Go check out in the index.html file in this module. There it is! <div></div>!
   We aren't currently doing anything with this div, so it probably shouldn't be there. 
   That's messy coding practice! But here we are, and there it is so let's use it!
 
@@ -113,7 +113,7 @@
 
 
 /* OK! Now it's your turn.
-  We're going to start with some throwback tasks from our old lessons to keep our memory sharp.
+  We're going to start with some throwback tasks from our old modules to keep our memory sharp.
 
   Step 1. Add a recipe-title class to the p element that contains 'My "Put the Pizza in Pizza Party" Pizza'
   Step 2. Add a .recipe-title selector to your css file and add a font-weight: bold property value pair to it.
@@ -130,6 +130,6 @@
           Add this property just above the background-color property value pair. That's the common place to put floats.
           What happened to your recipe cards?
 
-/* That's it! You've completed the lesson! 
-   Take a screenshot of this css file and web browser window and send it to me to show you've completed the lesson!  
+/* That's it! You've completed the module! 
+   Take a screenshot of this css file and web browser window and send it to me to show you've completed the module!  
 */
