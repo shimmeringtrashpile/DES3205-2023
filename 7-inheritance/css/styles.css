@@ -1,0 +1,64 @@
+/* 
+  Lesson 7! Inheritance
+
+ 
+*/
+
+p {
+    font-size: 18px
+}
+
+h1 {
+    font-size: 32px
+}
+
+h2 {
+    font-size: 28px
+}
+
+#intro {
+    color: powderblue;
+    font-size: 20px;
+    text-align: center;
+    background-color: magenta;
+    line-height: 64px
+}
+
+.imani {
+    color: blueviolet;
+}
+
+.carmen {
+    color: orangered;
+}
+
+#recipe-container {
+    width: 80%;
+    padding: 18px;
+    background-color: rgb(16, 16, 16);
+}
+
+#recipe-container p {
+    color: rgb(190, 190, 190);
+    font-size: 16px
+}
+
+#recipe-container .title {
+    color: white;
+    font-size: 28px;
+}
+
+#recipe-container .subtitle {
+    font-size: 24px
+}
+
+#recipe-container .ingredients,
+#recipe-container .preparation {
+    color: white;
+    text-transform: uppercase;
+}
+
+ul,
+ol {
+    color: white;
+}

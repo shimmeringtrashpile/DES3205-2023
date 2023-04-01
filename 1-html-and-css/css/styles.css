@@ -63,9 +63,9 @@ p {
 We added three property value pairs so this will do three things to the text that lives inside our html file's <p></p> tags. 
 
 It will: 
-- Change the font color from black (the browser default) to blueviolet, 
-- Align the text from left (the browser default) to center, 
-- Set the font size from 16px (the browser default) to 18px!
+- Change the font color from black (the browser's initial font color) to blueviolet, 
+- Align the text from left (the browser's initial alignment) to center, 
+- Set the font size from 16px (the browser initial font size) to 18px!
 */
 
 p {

@@ -54,7 +54,7 @@
   so it just LOOKS like our box has more padding on the top and bottom.
 
   Use your Google Chrome Developer Toolbar and it's Element Selector to mouse over your p elements and you will see this margin!
-  I bring this up because this is a great example of browser defaults doing a thing that feels hidden to you and is making you annoyed.
+  I bring this up because this is a great example of browser initial settings doing a weird thing that feels hidden to you and is making you annoyed.
   You didn't know about this 16px thing and you're stuck. The Dev Toolbar combined with searching the web a lot can really help.
   In Chrome the margin-top (above the element) and margin-bottom (below the element) of the <p> tag is 16px (or 1em).
   In Firefox, only the margin-bottom is 16px.
