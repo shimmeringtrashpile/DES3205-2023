@@ -1,48 +1,15 @@
 /* 
-  Module 7! Inheritance
-
- 
+  Module 8! Specificity with CSS Files
+  Look at my first comment in index.html first.
+  Next look at my comments in styles.css and this file below.
 */
 
-p {
-    font-size: 18px
-}
 
-h1 {
-    font-size: 32px
-}
-
-h2 {
-    font-size: 28px
-}
-
-.header {
-    color: purple;
-}
+/* This h3 element selector overides our two h3 element selectors in styles.css */
 
 h3 {
     font-size: 26px;
-    color: pink;
-}
-
-#heading-one {
-    color: blue;
-}
-
-#intro {
-    color: powderblue;
-    font-size: 20px;
-    text-align: center;
-    background-color: magenta;
-    line-height: 64px
-}
-
-.imani {
-    color: blueviolet;
-}
-
-.carmen {
-    color: orangered;
+    color: purple;
 }
 
 #recipe-container {

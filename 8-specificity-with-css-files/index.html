@@ -2,7 +2,35 @@
 <html lang="en">
 
 <head>
+    <!--
+        Module 8! Specificity with CSS Files 
+        First we're going to talk about how our web browsers read CSS files to figure out specificity.
+        Look at our link tags below. We have two CSS files named styles.css and then recipe-styles.css.
+        CSS files are read top to bottom in order when the page loads. 
+        Repeat that out loud: "CSS files are read top to bottom in order when the page loads."
+        Seriously, make the word sounds come out of your mouth. "CSS files are read top to bottom in order when the page loads."
+        
+        So, on our web page first the styles.css is fully read in, then recipe-styles.css is fully read in.
+        OK, but why does this matter?
+        Let's say you have an 'h3' element selector at the top of styles.css that sets color to red.
+        And then you have another 'h3' element selector farther down the styles.css page that sets color to orange, orange will override.
+        And then if you have third 'h3' element selector in recipe-styles.css that set color to pink, pink will override.
+        Any selectors in recipe-style.css that can override selectors in styles.css WILL.
+
+        Prepare to be suprised at how often this comes up! Ha!
+
+        You can think of it like this. When you open something like Google Docs, your default font is "Arial." 
+        When you set the font to "Nunito" you are overriding the default of "Arial." CSS specficity works the same way.
+        If "Arial" is set as the h3 font at the top of your first CSS file, and then you set the h3 font to "Nunito" in a second CSS file, 
+        your are overriding the first declaration of "Arial." 
+
+        OK! Now it's your turn.
+        Step 1. Change the first h3 element selector color in styles.css. Did anything change? If so or if not, why?
+        Step 2. Change the second h3 element selector color in styles.css. Did anything change? If so or if not, why?    
+        Step 3. Change the h3 element selector color in recipe-styles.css. Did anything change? If so or if not, why? 
+    -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/recipe-styles.css">
 </head>
 
 <body>
@@ -21,7 +49,8 @@
         <p class="imani">So, is it weird that I think you're my best friend?</p>
         <p class="carmen">It's cool! But what am I, a psychologist?</p>
         <p class="imani">I just don't know how I feel about it. I guess it doesn't matter. It just is.</p>
-        <p class="carmen">I like that. I found ten bucks. Let's go get tacos.</p>
+        <p class="carmen">I found a Starbucks gift card in the street. Wanna go see if it's got money on it?</p>
+        <p class="imani">Awww... You care!</p>
     </div>
     <div>
         <p id="pizza-party">Will Carmen go to the Pizza Party?</p>

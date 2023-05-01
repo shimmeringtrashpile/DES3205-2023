@@ -1,0 +1,50 @@
+/* 
+  Module 8! Specificity with CSS Files
+  Look at my first comment in index.html first.
+  Next, look at my comments below and in recipe-styles.css
+*/
+
+p {
+    font-size: 18px
+}
+
+h1 {
+    font-size: 32px
+}
+
+h2 {
+    font-size: 28px
+}
+
+
+/* This is being overidden by our h3 element selector below */
+
+h3 {
+    font-size: 24px;
+    color: red;
+}
+
+#intro,
+#pizza-party {
+    color: powderblue;
+    font-size: 40px;
+    text-align: center;
+    background-color: magenta;
+    line-height: 64px
+}
+
+.imani {
+    color: blueviolet;
+}
+
+.carmen {
+    color: orangered;
+}
+
+
+/* This is overiding our h3 element selector above. */
+
+h3 {
+    font-size: 26px;
+    color: orange;
+}
