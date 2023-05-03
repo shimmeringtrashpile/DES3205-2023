@@ -1,0 +1,149 @@
+/* 
+OK. Get ready to nerd out for a few minutes. You ready? Here we go! 
+Here's how the browser figures out the correct specificity for each selector. 
+*/
+
+
+/* 
+The browser uses three columns to determine specificity. 
+We start with column 3 on the left and go to 1, like 
+
+3-2-1
+
+These three columns map to our three selectors ID, Class, Element. 
+*/
+
+
+/* 
+Let's Review Slot 3: IDs
+Slots 3-2-1
+      ^
+If we have an ID we put a 1 in the first slot. 
+*/
+
+
+/* 
+Let's Review Slot 2: Classes
+Slots 3-2-1
+        ^
+For each classes (and pseudo-classes, we'll talk about those later.) we put a 1 in the second slot. 
+*/
+
+/* 
+Let's Review Slot 1: Elements
+Slots 3-2-1
+          ^
+For each element type we put a 1 in the third slot. 
+*/
+
+/*
+OK. Back to our example...
+*/
+
+#heading-one {
+    color: blue;
+}
+
+.header {
+    color: purple;
+}
+
+h3 {
+    font-size: 26px;
+    color: pink;
+}
+
+/*
+Let's "See what the browser sees" when specificity is being calculated.
+*/
+
+/*
+1-0-0 is the column weighting for this ID selector
+*/
+
+#heading-one {
+    color: blue;
+}
+
+/*
+0-1-0 is the column weighting for this class selector
+*/
+
+.header {
+    color: purple;
+}
+
+/* 
+0-0-1 is the column weighting for this element selector 
+*/
+
+h3 {
+    font-size: 26px;
+    color: pink;
+}
+
+/*
+I encourage you to play around with Keegan Street's specificity calculator https://specificity.keegan.st/
+By the way, Keegan Street is a person, not a road. You can see his other projects at https://github.com/keeganstreet 
+*/
+
+
+/* 
+OK. BUT THERE IS EVEN MORE TO IT! 
+There are two _special cases_ to know about when figuring out specificity.
+*/
+
+/* 
+The first special case is for the !important keyword.
+If you add !important to any of your selectors it will be given the highest priority. All others lose.
+Most designers consider !important a dangerous or at least very very annoying thing to use, so let's skip it for now.
+
+This is an example of !important value on a .header class selector just so you can see what it looks like. 
+*/
+
+.header {
+    color: greenyellow !important;
+} 
+
+/* 
+Again, you should try to never use !important except in emergencies. They almost always cause headaches.
+*/
+
+
+/*
+The second special case is inline styles!
+Inline styles will win out over .css file styles UNLESS !important is used in the .css style.
+
+Here's one of our h3 examples with a hotpink inline style applied.
+*/
+
+<h3 id="heading-one" style="color: hotpink;">The Power of Getting Tacos<h3>
+
+/*
+This inline style="color: hotpink" is going be more specific than your id="heading-one" style.
+So the browser will style your text will be hotpink.
+*/
+
+/* 
+To recap, here is the specificity order from most specific to least specific.
+1ST. !important
+2ND. inline style
+3RD. id
+4TH. class
+5TH. element 
+*/
+
+/* 
+I tried to think of an mnemonic for remembering this acronym but it is already !iice which is.. kinda good? All those i's though.
+"Don't slip on the !-i-ice" Hrm... maybe this will help us remember?
+
+If this feels a little bit... much... you're not wrong. I do promise that it is worth knowing.
+As you start working on more complex projects these specificity calculations become a very useful debugging tool.
+It is easy to spend an hour pulling your hair out wondering why your CSS style isn't working. Doing the specificity calculation can save a ton of time.
+*/
+
+/* 
+A couple of tips: 
+Chrome's "Dev Tools" sorts classes by their specificity from top-to-bottom. This is a great way to understand which style is winning.
+Safari's "Develop Tool" Web Inspector will show you the Specificity: (0,0,0) number if you hover over the selector.
+*/
